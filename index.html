@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#hearder">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi, I'm <span>Hamza</span><br>From Pakistan</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------About----------------------- -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm <span>Rao Muhammad Hamza</span>, a dedicated computer science student with a passion
+                        for technology and a keen interest in <span>frontend web development</span>, and<span> graphic
+                            design</span>. Currently, I am pursuing my degree at <span>NFC Institute of Engineering and
+                            Technology</span>, where I am honing my skills in various programming languages,<span>
+                            including C, Python and Object-Oriented Programming (OOP)</span>.</p>
+                    <p>Feel free to get in touch with me through <span>email or phone</span>. I am excited about the
+                        opportunities that lie ahead and look forward to making a meaningful impact in the field of
+                        computer science.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link " onclick="opentab('skills',event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience',event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education',event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Ui/Ux</span><br>Desining web/app interface</li>
+                            <li><span>Web Development</span><br>web app development</li>
+                            <li><span>App Development</span><br>Android and ios apps</li>
+                            <li><span>Data entry</span><br>Ms office</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - current</span><br>UI/Ux design from NFC-IET </li>
+                            <li><span>2023 - current</span><br>web app development from NFC-IET</li>
+                            <li><span>2024 - current</span><br>Android and ios apps form NFC-IET</li>
+                            <li><span>2024 - current</span><br>Internship at DevlopersHub corp.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>NFC-Institue of Engineering and Technology</li>
+                            <li><span>2020</span><br>ICS from Govt. Science College</li>
+                            <li><span>2018</span><br>Metric from Govt. Pilot Secondary school</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------Services------------------- -->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web creative design refers to the practice of crafting visually compelling and user-centric
+                        websites, integrating aesthetics, functionality, and technical performance. It involves a mix of
+                        artistic creativity, design theory, and technical know-how, to create websites that are both
+                        visually appealing and easy to navigate. Web creative design is crucial for establishing a
+                        brand’s online presence, improving user experience, and driving conversions.</p>
+                    <a href="#"> Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI (User Interface) and UX (User Experience) Design are integral components of creating digital
+                        products that are both visually appealing and highly functional. While they are closely related,
+                        they focus on different aspects of the user’s interaction with a product. Together, UI and UX
+                        design play a pivotal role in shaping how users perceive and engage with websites, apps, and
+                        other digital platforms.</p>
+                    <a href="#"> Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <i class='fab fa-google-play'></i>
+                    <h2>App Design</h2>
+                    <p>App design is the process of creating visually appealing and user-friendly mobile applications.
+                        It involves both User Interface (UI) and User Experience (UX) design principles to build apps
+                        that are not only beautiful but also intuitive and easy to navigate. The ultimate goal of app
+                        design is to deliver a seamless, enjoyable experience that fulfills the needs of its users while
+                        supporting the business objectives of the app creators.</p>
+                    <a href="#"> Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------Portfolio------------------------- -->
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social media App</h3>
+                        <p>the app connected you to the talented peoplearound the world.</p>
+                        <a href="#">
+                            <i class="fa fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>the app connected you to the talented peoplearound the world.</p>
+                        <a href="#">
+                            <i class="fa fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>E-commerce App</h3>
+                        <p>the app connected you to the talented peoplearound the world.</p>
+                        <a href="#">
+                            <i class="fa fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ----------------------Contact-------------------------- -->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>raohamza1608@gmail.com<a href="https://mail.google.com/"><i class="fa fa-envelope"></i></a></p>
+                    <p>mhamzarao@outlook.com<a href="https://outlook.live.com/"><i class="fa fa-envelope"></i></a></p>
+                    <p>0315-8168145 <a href=""><i class="fas fa-phone"></i></a><a href="https://web.whatsapp.com/"><i
+                                class="fab fa-whatsapp"></i></a></p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="images/My Resume.pdf" download class="btn">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <!-- Form Fields -->
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="Email" placeholder="Enter your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message" required></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Alright Copyright &#169 reserved by Hamza</p>
+        </div>
+    </div>
+    <script>
+        // ------------------------------------active tab link function--------------------------------
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname, event) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname, event).classList.add("active-tab");
+        }
+        // ------------------------mobile side menu function------------------------------------
+        let sidemeu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+        // -----------------------Form submission-----------------------------
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxj9ZjsnwLG0EyoIW7c14xDUTXjvb_vAmBQvpB6g9WvOV0R2UgxpEMkiCXq_lXvrscjlg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Mesage sent successfuly"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+
+    </script>
+</body>
+
+</html>
