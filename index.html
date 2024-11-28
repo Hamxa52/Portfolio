@@ -12,36 +12,53 @@
     <div class="mouse-dot"></div>
     <div class="gradient-container">
         <header id="header">
-            <nav>
-                <ul id="sidemenu">
-                    <li><a href="#intro" class="home">
-                            <span class="initial">Home</span>
-                            <span class="new">Home</span>
-                        </a></li>
-                    <li><a href="#about" class="home">
-                            <span class="initial">About</span>
-                            <span class="new">About</span>
-                        </a></li>
-                    <li><a href="#services" class="home">
-                            <span class="initial">Services</span>
-                            <span class="new">Services</span>
-                        </a></li>
-                    <li><a href="#skill" class="home">
-                            <span class="initial">Skills</span>
-                            <span class="new">Skills</span>
-                        </a></li>
-                    <li><a href="#portfolio" class="home">
-                            <span class="initial">Portfolio</span>
-                            <span class="new">Portfolio</span>
-                        </a></li>
-                    <li><a href="#contact" class="home">
-                            <span class="initial">Contact</span>
-                            <span class="new">Contact</span>
-                        </a></li>
-                        <i class="fa fa-times" id="closeIcon" onclick="closemenu()" style="color: #fff;"></i>
+         
+                    <a href="#" onclick="openMenu()" id="fa-bars" class="open">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg>
+                    </a>
+                        <div id="sidemenu" class="hidden-menu">
+                            <div><a href="#" id="fa-times" onclick="closeMenu()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                                    </svg>
+                                </a></div>
+                            <div><a href="#header">Home</a></div>
+                            <div><a href="#about">About</a></div>
+                            <div><a href="#services">Services</a></div>
+                            <div><a href="#skill">Skill</a></div>
+                            <div><a href="#portfolio">Portfolio</a></div>
+                            <div><a href="#contact">Contact</a></div>
+                        </div>
+                <ul class="navbar">
+                    <li><a href="#header" class="hideonmobile home">
+                        <span class="initial">Home</span>
+                        <span class="new">Home</span>
+                    </a></li>
+                    <li><a href="#about" class="hideonmobile home">
+                        <span class="initial">About</span>
+                        <span class="new">About</span>
+                    </a></li>
+                    <li><a href="#services" class="hideonmobile home">
+                        <span class="initial">Services</span>
+                        <span class="new">Services</span>
+                    </a></li>
+                    <li><a href="#skill" class="hideonmobile home">
+                        <span class="initial">Skills</span>
+                        <span class="new">Skills</span>
+                    </a></li>
+                    <li><a href="#portfolio" class="hideonmobile home">
+                        <span class="initial">Portfolio</span>
+                        <span class="new">Portfolio</span>
+                    </a></li>
+                    <li><a href="#contact" class="hideonmobile home">
+                        <span class="initial">Contact</span>
+                        <span class="new">Contact</span>
+                    </a></li>
+                    
                 </ul>
-                <i class="fa fa-bars" id="openIcon" onclick="openmenu()" style="color: #fff;"></i>
-            </nav>
+            </divnav>            
         </header>
 
         <div id="particles-intro" style="position: absolute; width: 100%; height: 100%; z-index: -1;"></div>
@@ -53,7 +70,7 @@
                     <span class="initial">Download CV</span><span class="new">Download CV</span>
                 </a>
             </div>
-            <div class="side-icon">
+            <div class="side-icon" id="side-icon">
                 <a href="#" class="hidden"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#" class="hidden"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="#" class="hidden"><i class="fa-brands fa-github"></i></a>

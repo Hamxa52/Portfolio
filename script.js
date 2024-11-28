@@ -112,30 +112,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   });
 });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   const hamburger = document.querySelector(".hamburger");
-//   const sideMenu = document.querySelector(".sidemenu");
-//   const closeMenu = document.querySelector(".close-menu");
-//   const sideIcons = document.querySelector(".side-icon");
-
-//   const openMenu = () => {
-//       sideMenu.classList.add("active");
-//       hamburger.style.display = "none";
-//       sideIcons.style.display = "none";
-//   };
-
-//   const closeMenuFunc = () => {
-//       sideMenu.classList.remove("active");
-//       hamburger.style.display = "block";
-//       sideIcons.style.display = "block";
-//   };
-
-//   hamburger.addEventListener("click", openMenu);
-
-//   closeMenu.addEventListener("click", closeMenuFunc);
-// });
-
 document.addEventListener("DOMContentLoaded", () => {
   const element = document.querySelector(".heading-1");
   const text = "Frontend Developer";
@@ -200,30 +176,22 @@ const scrollAnimation = () => {
 document.addEventListener("scroll", scrollAnimation);
 scrollAnimation();
 
-document.addEventListener("DOMContentLoaded", () => {
+// JavaScript to toggle the navigation menu on small screens
+function openMenu() {
   const sidemenu = document.getElementById("sidemenu");
-  const openIcon = document.getElementById("openIcon");
-  const closeIcon = document.getElementById("closeIcon");
-  const sideIcons = document.querySelector(".side-icon");
+  const openIcon = document.getElementById("fa-bars");
 
-  function openmenu() {
-      sidemenu.classList.add("active"); // Add active class for animation
-      openIcon.style.display = "none"; // Hide bars icon
-      closeIcon.style.display = "block"; // Show close icon
-      sideIcons.classList.add("hidden"); // Hide side icons
-  }
+  sidemenu.style.display = "block"; // Show side menu
+  openIcon.style.display = "none"; // Hide open icon
+}
 
-  function closemenu() {
-      sidemenu.classList.remove("active"); // Remove active class
-      closeIcon.style.display = "none"; // Hide close icon
-      openIcon.style.display = "block"; // Show bars icon
-      sideIcons.classList.remove("hidden"); // Show side icons
-  }
+function closeMenu() {
+  const sidemenu = document.getElementById("sidemenu");
+  const openIcon = document.getElementById("fa-bars");
 
-  // Assign functions to window to make them callable in the HTML
-  window.openmenu = openmenu;
-  window.closemenu = closemenu;
-});
+  sidemenu.style.display = "none"; // Hide side menu
+  openIcon.style.display = "block"; // Show open icon
+}
 
 const canvas = document.getElementById('hexParticles');
 const ctx = canvas.getContext('2d');
