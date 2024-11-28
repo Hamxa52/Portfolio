@@ -373,7 +373,6 @@ nav {
     text-align: center;
     padding: 100px 20px;
     width: 1300px;
-    margin-left: 85px;
     flex-direction: column;
 }
 
@@ -397,15 +396,13 @@ nav {
     border-radius: 8px;
     border: 1px solid #333;
     color: #fff;
-    margin-left: 149px;
+    margin-left: 80px;
 }
 .about-me {
     font-size: 32px;
     margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2px;
+    align-content: center;
+    margin-left: 600px;
 }
 .about-card h3{
     font-size: 20px;
@@ -471,6 +468,8 @@ nav {
 
 .process-div{
     margin-left: 40px;
+    width: 1000px;
+    margin-left: 9px;
 }
 .process-div h2 {
     font-size: 32px;
@@ -728,7 +727,7 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    margin-left: 88px;
+    margin-left: 68px;
     height: 300px;
   }
   
@@ -803,7 +802,7 @@ nav {
      position: relative;
     overflow: hidden;
     margin-top: 120px;
-    margin-left: 47px;
+    margin-right: 110px;
 }
 .container {
     max-width: 1200px;
@@ -1303,7 +1302,6 @@ nav {
         align-items: center;
         width: auto;
         flex-direction: column;
-        margin-left: 10px;
     }
 
     .about-me {
